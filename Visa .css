@@ -1,0 +1,495 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url("background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+header{
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(8px);
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-img{
+    width: 80px;
+    height 80px;
+    object-fit:contain;
+}
+
+.logo-box h1{
+    color:#ffd000;
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd000;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.65);
+    padding:60px;
+    border-radius:20px;
+    max-width:850px;
+}
+
+.overlay h2{
+    font-size:60px;
+    margin-bottom:25px;
+}
+
+.overlay p{
+    font-size:24px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#ffd000;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+section{
+    padding:100px 50px;
+}
+
+section h2{
+    text-align:center;
+    font-size:45px;
+    color:#ffd000;
+    margin-bottom:40px;
+}
+
+.about{
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+}
+
+.about p{
+    max-width:1000px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.9;
+    color:#ddd;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(0,0,0,0.75);
+    width:320px;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#ffd000;
+    padding:20px 20px 10px;
+}
+
+.card p{
+    color:#ccc;
+    padding:0 20px 25px;
+    line-height:1.7;
+}
+
+.pricing{
+    background:rgba(0,0,0,0.7);
+}
+
+.price-box{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.price-card{
+    width:300px;
+    background:rgba(20,20,20,0.95);
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:scale(1.05);
+}
+
+.price-card h3{
+    color:#ffd000;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:22px;
+    margin:15px 0;
+    color:#ddd;
+}
+
+.map{
+    padding:0;
+}
+
+.map iframe{
+    width:100%;
+    height:450px;
+    border:none;
+}
+
+.socials{
+    text-align:center;
+    background:rgba(0,0,0,0.8);
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.social-icons img{
+    width:65px;
+    height:65px;
+    transition:0.3s;
+}
+
+.social-icons img:hover{
+    transform:scale(1.15);
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:black;
+    color:#888;
+}
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .overlay h2{
+        font-size:40px;
+    }
+
+    .overlay p{
+        font-size:18px;
+    }
+
+}
+/* DODAJ NA SAM KRAJ style.css */
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+    header{
+        padding:20px 30px;
+    }
+
+    nav ul li{
+        margin-left:15px;
+    }
+
+    .overlay h2{
+        font-size:45px;
+    }
+
+    .overlay p{
+        font-size:20px;
+    }
+
+    section{
+        padding:80px 30px;
+    }
+
+}
+
+/* TELEFON */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+        gap:20px;
+    }
+
+    .logo-box{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-img{
+        width:50px;
+        height:50px;
+    }
+
+    .logo-box h1{
+        font-size:24px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    .hero{
+        padding:120px 20px 50px;
+    }
+
+    .overlay{
+        padding:35px 20px;
+    }
+
+    .overlay h2{
+        font-size:32px;
+    }
+
+    .overlay p{
+        font-size:17px;
+    }
+
+    .btn{
+        padding:13px 25px;
+        font-size:15px;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    .about p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .price-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .price-card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .contact p{
+        font-size:18px;
+    }
+
+    .map iframe{
+        height:300px;
+    }
+
+    .social-icons{
+        gap:20px;
+    }
+
+    .social-icons img{
+        width:50px;
+        height:50px;
+    }
+
+}
+
+/* MALI TELEFONI */
+
+@media(max-width:480px){
+
+    .overlay h2{
+        font-size:26px;
+    }
+
+    .overlay p{
+        font-size:15px;
+    }
+
+    .logo-box h1{
+        font-size:20px;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+
+    .price{
+        font-size:30px;
+    }
+
+}
+.tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:35px;
+}
+
+.tab{
+    padding:14px 20px;
+    font-size:18px;
+    background:black;
+    color:white;
+    border:2px solid #ffd000;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.tab:hover{
+    background:#ffd000;
+    color:black;
+}
+
+.tab-content{
+    display:none;
+    text-align:center;
+    background:rgba(0,0,0,0.65);
+    padding:40px;
+    border-radius:18px;
+    max-width:650px;
+    margin:auto;
+}
+
+.tab-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#ffd000;
+}
+
+.tab-content p{
+    font-size:20px;
+    margin:8px 0;
+}
+
+.tab-content.active{
+    display:block;
+}
